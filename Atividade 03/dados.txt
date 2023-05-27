@@ -1,6 +1,7 @@
-Produto: Amaciante 
-Preço: 5.00 
-Validade: 10/23 
-Produto: Xilito 
-Preço: 15.00 
-Validade: 10/24 
+Produto: Banana 
+Preço: R$ 12.00 
+Validade: 10/12 
+
+Produto: Rolha 
+Preço: R$ 12.00 
+Validade: 10/30 
