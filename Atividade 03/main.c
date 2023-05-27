@@ -11,19 +11,19 @@ struct Dados {
 int verificarDadosExistentes(struct Dados produto) {
     FILE *arquivo = fopen("dados.txt", "r");
     if (arquivo == NULL) {
-        return 0; // Arquivo não existe, dados não existem
+        return 0;
     }
 
     char linha[100];
     while (fgets(linha, sizeof(linha), arquivo) != NULL) {
         if (strstr(linha, produto.produto) != NULL) {
             fclose(arquivo);
-            return 1; // Dados já existem
+            return 1; 
         }
     }
 
     fclose(arquivo);
-    return 0; // Dados não existem
+    return 0; 
 }
 
 void gravarDados(struct Dados produto) {
@@ -52,11 +52,11 @@ int main() {
     printf("Informe a validade do produto: ");
     scanf("%s", produto.validade);
 
-    // Verificar se os dados já existem
+    
     if (verificarDadosExistentes(produto)) {
         printf("Os dados informados já existem!\n");
     } else {
-        // Gravar os dados no arquivo
+       
         gravarDados(produto);
     }
 
