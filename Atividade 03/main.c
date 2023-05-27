@@ -33,7 +33,9 @@ void gravarDados(struct Dados produto) {
         return;
     }
 
-    fprintf(arquivo, "%s, %.2f, %s\n", produto.produto, produto.preco, produto.validade);
+    fprintf(arquivo, "Produto: %s \n", produto.produto);
+    fprintf(arquivo, "Preço: R$ %.2f \n",  produto.preco);
+    fprintf(arquivo, "Validade: %s \n", produto.validade);
 
     fclose(arquivo);
     printf("Dados gravados com sucesso!\n");

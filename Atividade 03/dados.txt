@@ -1,0 +1,6 @@
+Produto: Amaciante 
+Preço: 5.00 
+Validade: 10/23 
+Produto: Xilito 
+Preço: 15.00 
+Validade: 10/24 
