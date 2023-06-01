@@ -18,7 +18,7 @@ int main() {
     char caractere;
 
     
-    arquivo = fopen("arq.txt", "w");
+    arquivo = fopen("arq.txt", "a");
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo!\n");
         return 1;
@@ -34,12 +34,9 @@ int main() {
             break;
         }
 
-        fputc(caractere, arquivo); 
+        fputc(("%d\n",caractere), arquivo); 
         
-        if (caractere == '\n') {
-            fputc('\r', arquivo); //(CR) após a quebra de linha 
-            fputc('\n', arquivo); //(LF) após a quebra de linha
-        }
+        
     }
 
 
